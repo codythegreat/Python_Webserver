@@ -13,3 +13,5 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
 
     # Call this to allow the server to process requests
     httpd.serve_forever()
+
+    # You can call [servername].socket.close() to end the above process
